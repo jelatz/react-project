@@ -1,21 +1,11 @@
-import Hello from "./components/Hello";
+import Header from "./components/Header";
+import Todo from "./components/Todo";
 
-function App() {
-  // const seatNumbers = [1, 4, 6];
-  const person = {
-    name: "jlad",
-    message: "Gwapo!",
-    emoji: "🤣",
-    seatNumbers: [1, 4, 6],
-  };
+export default function App() {
   return (
-    <div className="yes">
-      <div className="container mx-auto m-10">
-        <h1 className="bg-red-800 text-white text-3xl">Hello World!</h1>
-        <Hello person={person} />
-      </div>
-    </div>
+    <>
+      <Header />
+      <Todo />
+    </>
   );
 }
-
-export default App;
